@@ -1,0 +1,20 @@
+{
+  "name": "SQL Mastery (Core + Architect)",
+  "short_name": "SQL Mastery",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#5B61FF",
+  "theme_color": "#6D5DFC",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
