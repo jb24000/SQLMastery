@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>SQL Mastery (Core + Architect)</title>
+  <meta name="theme-color" content="#6D5DFC" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="brand">
+      <div class="logo">Σ</div>
+      <div>
+        <h1>SQL Mastery</h1>
+        <p class="sub">Core (30d) + Architect Add‑On (15d) — with AWS tie‑ins</p>
+      </div>
+    </header>
+
+    <div class="appbox">
+      <div class="top-ring">
+        <div class="ring" role="img" aria-label="Progress">
+          <div class="ring-center" id="ringText">0%</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="control">
+          <label for="modeSelect">Mode</label>
+          <select id="modeSelect" aria-label="Select Mode">
+            <option value="guided">Guided Path (Core → Architect)</option>
+            <option value="free">Pick‑Your‑Track</option>
+          </select>
+        </div>
+        <div class="control">
+          <label for="trackSelect">Track</label>
+          <select id="trackSelect" aria-label="Select Track">
+            <option value="core">Core (30 days)</option>
+            <option value="architect">Architect Add‑On (15 days)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="card stat">
+          <div class="stat-number" id="streak">0</div>
+          <div class="stat-label">Day Streak</div>
+        </div>
+        <div class="card stat">
+          <div class="stat-number" id="completed">0</div>
+          <div class="stat-label" id="completedLabel">Days Completed</div>
+        </div>
+      </div>
+
+      <div class="card notify">
+        <div class="notify-left"><span class="bell">🔔</span><span>Enable notifications for daily reminders</span></div>
+        <div class="notify-actions">
+          <button id="enableAlerts" class="btn primary">Enable Alerts</button>
+          <button id="resetBtn" class="btn outline">Reset</button>
+        </div>
+      </div>
+
+      <section class="card day">
+        <header class="day-header">
+          <button id="prevBtn" class="btn outline">← Prev</button>
+          <h2 id="dayTitle">Day 1: Welcome</h2>
+          <button id="nextBtn" class="btn outline">Next →</button>
+        </header>
+        <ul id="taskList" class="tasks"></ul>
+
+        <div id="resumeWrap" class="resume">
+          <div class="resume-row">
+            <b>Resume bullet (auto):</b>
+            <span id="resumeBullet"></span>
+          </div>
+          <button id="copyBullet" class="btn outline small">Copy bullet</button>
+        </div>
+      </section>
+
+      <div class="footer-inside">
+        <div class="left">
+          <button id="installBtn" class="btn outline">Install App</button>
+          <button id="offlineBtn" class="btn outline">Enable Offline</button>
+        </div>
+        <div class="right">
+          <span id="swDot" class="dot offline"></span>
+          <span id="swText">Offline not enabled</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
